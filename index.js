@@ -1,7 +1,8 @@
-const http = require('http');
-const PORT = process.env.PORT || 3000;
-http.createServer((req, res) => {
-  res.end('¡Hola desde nevarezdocke!');
-}).listen(PORT, () => {
-  console.log(`Servidor escuchando en el puerto ${PORT}`);
+import express from 'express';
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('¡Hola desde Express!');
 });
+
+export default app;

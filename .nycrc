@@ -1,0 +1,11 @@
+{
+  "extension": [".js"],
+  "include": ["index.js"],
+  "exclude": ["test/**"],
+  "reporter": ["text", "html"],
+  "all": true,
+  "check-coverage": false,
+  "sourceMap": false,
+  "instrument": true,
+  "require": ["@babel/register"]
+}

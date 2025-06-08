@@ -1,12 +1,35 @@
 {
   "name": "nevarezdocker",
   "version": "1.0.0",
-  "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --require @babel/register",
+    "coverage": "nyc npm test"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxa7f/nevarezdocker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alxa7f/nevarezdocker/issues"
+  },
+  "homepage": "https://github.com/alxa7f/nevarezdocker#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/register": "^7.27.1",
+    "babel-plugin-istanbul": "^7.0.0",
+    "chai": "^5.2.0",
+    "chai-http": "^5.1.2",
+    "mocha": "^11.5.0",
+    "nyc": "^17.1.0"
+  }
 }
