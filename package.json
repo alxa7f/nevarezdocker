@@ -1,15 +1,15 @@
 {
   "name": "nevarezdocker",
   "version": "1.0.0",
-  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require @babel/register",
+    "test": "mocha test/**/*.test.js",
     "coverage": "nyc npm test"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alex Nevárez alex.nevarez.d@gmail.com>",
   "license": "ISC",
+  "description": "Proyecto de Express probado con Mocha y Chai",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alxa7f/nevarezdocker.git"
@@ -18,17 +18,12 @@
     "url": "https://github.com/alxa7f/nevarezdocker/issues"
   },
   "homepage": "https://github.com/alxa7f/nevarezdocker#readme",
-  "description": "",
   "dependencies": {
+    "chai": "^4.5.0",
+    "chai-http": "^4.4.0",
     "express": "^5.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.27.4",
-    "@babel/preset-env": "^7.27.2",
-    "@babel/register": "^7.27.1",
-    "babel-plugin-istanbul": "^7.0.0",
-    "chai": "^5.2.0",
-    "chai-http": "^5.1.2",
     "mocha": "^11.5.0",
     "nyc": "^17.1.0"
   }
