@@ -17,4 +17,3 @@ describe('GET /', () => {
     expect(res.text).to.equal('¡Hola desde Express!');
   });
 });
-
