@@ -6,7 +6,6 @@ WORKDIR /app
 
 #Copia archivos de configuración y dependencias
 COPY package*.json ./
-COPY .babelrc .babelrc
 COPY .nycrc .nycrc
 
 #Instala dependencias
